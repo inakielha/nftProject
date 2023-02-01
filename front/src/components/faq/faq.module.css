@@ -1,0 +1,168 @@
+.beige {
+    background-color: #CEB280;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.skyblue {
+    background-color: #68c5d1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.pink {
+    background-color: #ffafcc;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.violet {
+    background-color: #9d4edd;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.orange {
+    background-color: #fe7f2d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+}
+
+.green {
+    width: 100%;
+    background-color: #a7c957;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.faq {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    font-size: 2rem;
+    font-weight: bold;
+    /* gap: 0.5em; */
+    width: 100%;
+}
+
+.pregunta {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 0.5em;
+    /* margin-left: 1em; */
+}
+
+.text {
+    padding-left: 1em;
+}
+
+
+.respuesta {
+    background-color: aliceblue;
+    width: 100%;
+    padding-bottom: 1em;
+    display: flex;
+    /* justify-content:; */
+    align-items: center;
+    cursor: pointer;
+    /* padding-left: 1em; */
+    gap: 0;
+    animation: height-max 2s,text 2s;
+    /* animation: text 3s; */
+    /* animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: wiggle; */
+}
+
+.flecha {
+    width: 15px;
+    height: 15px;
+    transition: .5s;
+    float: left;
+    box-shadow: -5px 5px 0 black;
+    transform: rotate(-135deg);
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.flechaBaja {
+    width: 15px;
+    height: 15px;
+    transition: .5s;
+    float: left;
+    box-shadow: -5px 5px 0 black;
+    transform: rotate(-43deg);
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.respuestaText {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 400;
+}
+
+.respuestaText::selection {
+    color: black;
+}
+
+@keyframes height-max {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 15em;
+    }
+}
+
+@keyframes text {
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: black;
+    }
+}

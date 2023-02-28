@@ -1,0 +1,76 @@
+.row{
+    display: grid;
+    grid-template-columns: 6% 11% 12% 11% 12% 12% 12% 12% 11%;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    /* padding: 0.5em 0; */
+    text-align: center;
+    background-color: #2d293e;
+    border-radius: 2vh;
+    color: #fff;
+    font-family: "Red Hat Display";
+    font-weight: bold;
+    padding: 0.2em 0;
+}
+.row div span{
+    font-family: "Red Hat Display";
+    font-weight: normal;
+}
+.row div {
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Red Hat Display";
+font-weight: bold;
+font-size: 1.7rem;
+}
+
+
+.imgContainer img {
+    border: 0.2em solid #f2c53d;
+    border-radius: 50%;
+    height: auto;
+    width: 50%;
+    align-self: center;
+}
+.name{
+    /* text-align: left; */
+    /* width: 10%; */
+    /* background-color: gray; */
+    word-wrap: break-word;
+}
+.par div span{
+    font-size: 1rem;
+}
+
+.inpar div span{
+    font-size: 1rem;
+}
+.inpar div div{
+    font-size: 2rem;
+    font-weight: 800;
+    color: aliceblue;
+}
+.par div div{
+    font-size: 2rem;
+    font-weight: 800;
+    color: aliceblue;
+}
+.tweetdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+.icon{
+    color: #1DA1F2;
+}

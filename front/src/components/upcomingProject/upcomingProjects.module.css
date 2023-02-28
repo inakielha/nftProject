@@ -1,0 +1,72 @@
+.test{
+    background: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%);
+    display: flex;
+    align-items: center;
+    /* padding-top: 15vh; */
+    flex-direction: column;
+}
+.tablaContainer{
+    display: flex;
+    /* background-color: aliceblue; */
+    align-items: center;
+    width: 100%;
+    padding-top: 13.9vh;
+    background:rgb(0, 0, 0,0.6) ;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.buttonDiv{
+    /* background-color: aliceblue; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.buttonDiv a{
+    background-color: #e3d5ca;
+    /* color: #CEB280; */
+    padding: 1em;
+    border-radius: 5vh;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+.grid{
+    width: 80%;
+    display: grid;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    row-gap: 0.5em;
+}
+.rows{
+    display: grid;
+    grid-template-columns: 5% 10% 25% 25% 10%;
+    font-family: "Red Hat Display";
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 1em;
+    width: 100%;
+}
+.rows span{
+    width: 100%;
+    /* background-color: red; */
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* border: 5px solid black; */
+}
+
+.projectContainer :nth-child(even){
+    background-color: aqua;
+    width: 100%;
+}

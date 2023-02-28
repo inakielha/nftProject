@@ -1,11 +1,26 @@
 .transparent {
     width: 100%;
+    /* height: auto; */
     padding: 1.5em 0;
-    background-color: red;
+    /* padding: 2em 0; */
+    /* background-color: red; */
     display: flex;
     align-content: center;
     justify-content: center;
     position: fixed; 
+    /* background:rgb(0, 0, 0,0.6) ; */
+    /* background-color: orange; */
+}
+.transparentMove{
+    width: 100%;
+    padding: 1.5em 0;
+    background-color: #301051;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    box-shadow: 0 0.5px 10px black;
+    z-index: 3;
 }
 .beige {
     width: 100%;
@@ -150,12 +165,21 @@
     /* border: 5px solid black; */
 }
 
+
 .container {
     /* background-color: forestgreen; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    /* background:rgb(0, 0, 0,0.6) ; */
+
+}
+.logoContainer{
+    width: 10%;
+}
+.logoContainer img{
+    width: 100%;
 }
 
 .redes {
@@ -171,6 +195,7 @@
     cursor: pointer;
     position: relative;
     z-index: 2;
+    color: #fff;
 }
 
 .icon:hover {

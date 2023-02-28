@@ -7,6 +7,8 @@ import Vision from './components/vision/vision';
 import Team from './components/team/team';
 import Builder from './components/builder/builder';
 import Faq from './components/faq/faq';
+import { Route, Routes, } from 'react-router-dom';
+
 
 function App() {
   const [colorFondo, setColorFondo] = useState("beige")

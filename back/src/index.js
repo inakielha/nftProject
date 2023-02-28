@@ -1,14 +1,15 @@
 const  express =  require("express")
 const cors = require('cors')
-// const { dbConnection } = require("./dataBase/db")
+const { dbConnection } = require("./dataBase/db")
 const route = require ('./routes/index')
-require('dotenv').config({path:'../.env'})
+// require('dotenv').config({path:'../.env'})
+require('dotenv').config()
 
 const app = express()
-// dbConnection()
+dbConnection()
 
 
-app.set("port", process.env.PORT || 2500)
+app.set("port", process.env.MONGOPORT || 2500)
 
 app.use(cors())
 
@@ -25,5 +26,5 @@ app.use((req, res, next) => {
 app.use('/', route)
 
 const server = app.listen(app.get("port"), () => {
-    console.log("Server is on port" + " " + process.env.PORT)
+    console.log("Server is on port" + " " + process.env.MONGOPORT)
 })

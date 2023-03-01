@@ -23,7 +23,14 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.use('/', router)
+// app.use('/', router)
+app.use('/', async(req, res)=>{
+    return res.json({
+        name: "Brodi",
+        skills: ["Handosme","powerfull","Cool"],
+        message: "Thank you 🧡"
+    })
+})
 
 const server = app.listen(app.get("port"), () => {
     console.log("Server is on port" + " " + process.env.PORT)

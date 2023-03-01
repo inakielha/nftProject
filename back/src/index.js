@@ -1,7 +1,7 @@
 const  express =  require("express")
 const cors = require('cors')
 const { dbConnection } = require("./database/db")
-const route = require ('./routes/index')
+const router = require ('./routes/index')
 // require('dotenv').config({path:'../.env'})
 require('dotenv').config()
 
@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.use('/', route)
+app.use('/', router)
 
 const server = app.listen(app.get("port"), () => {
     console.log("Server is on port" + " " + process.env.MONGOPORT)

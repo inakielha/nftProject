@@ -9,7 +9,7 @@ const app = express()
 dbConnection()
 
 
-app.set("port", process.env.MONGOPORT || 2500)
+app.set("port", process.env.PORT || 2500)
 
 app.use(cors())
 
@@ -26,5 +26,5 @@ app.use(express.json());
 app.use('/', router)
 
 const server = app.listen(app.get("port"), () => {
-    console.log("Server is on port" + " " + process.env.MONGOPORT)
+    console.log("Server is on port" + " " + process.env.PORT)
 })

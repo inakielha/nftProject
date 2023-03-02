@@ -15,7 +15,7 @@ export default function UpcomingProjects() {
     const [sort, setSorted] = useState("")
     const dispatch = useDispatch()
     const upcomingProjects = useSelector(state => state.clientReducer.upcomingProjects)
-
+    
     let dmText = "Hi%20Mushies!%20I%20want%20to%20list%20my%20project!💫🍄"
     useEffect(() => {
         window.scrollTo(0, 0)

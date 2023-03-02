@@ -62,7 +62,7 @@ export default function ProjectsMinted() {
               class="twitter-dm-button" data-screen-name="@furni">
               List your Project</a></div>
           </div>
-          <div className={s.grid}>
+          <div className={s.grid} style={{cursor: "auto"}}>
             <div className={s.rows}>
               <div><span></span></div>
               <div><span></span></div>

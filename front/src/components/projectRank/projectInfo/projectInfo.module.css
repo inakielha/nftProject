@@ -40,7 +40,14 @@ font-size: 1.7rem;
     height: auto;
     width: 50%;
     align-self: center;
+    background-color: #bb55ff;
+    /* background: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%); */
 }
+
+.maxHype {
+    background:rgba(177, 71, 71, 0.6) ;
+}
+
 .name{
     /* text-align: left; */
     /* width: 10%; */
@@ -74,3 +81,4 @@ font-size: 1.7rem;
 .icon{
     color: #1DA1F2;
 }
+

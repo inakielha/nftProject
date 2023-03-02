@@ -5,8 +5,9 @@ import NavMushie from './components/navbar/navbarTwo/navMushie';
 import Projects from './components/projectRank/projectRank';
 import ProjectsMinted from './components/projectsMinted/projectsMinted';
 import UpcomingProjects from './components/upcomingProject/upcomingProject';
+import axios from "axios"
 
-
+axios.defaults.baseURL= process.env.REACT_APP_API
 export default function Landing(){
     return(
         <>

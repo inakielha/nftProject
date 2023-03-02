@@ -1,4 +1,11 @@
-const communitySort = (test) => {
+import two from "../assets/two.png"
+import three from "../assets/three.png"
+import minHype from "../assets/minHype.png"
+import maxHype from "../assets/maxHype.png"
+import four from "../assets/four.png"
+import five from "../assets/five.png"
+
+export const communitySort = (test) => {
     let allProjects = test
     allProjects = allProjects.slice().sort((a, b) => {
         let aNumber;
@@ -43,7 +50,7 @@ const communitySort = (test) => {
     return allProjects
 }
 
-const marketSort = (projects) => {
+export const marketSort = (projects) => {
     projects = projects.slice().sort((a, b) => {
         let aNumber;
         let bNumber;
@@ -85,7 +92,7 @@ const marketSort = (projects) => {
     return projects
 }
 
-const volumeSort = (projects) => {
+export const volumeSort = (projects) => {
     projects = projects.slice().sort((a, b) => {
         let aNumber;
         let bNumber;
@@ -130,8 +137,38 @@ const volumeSort = (projects) => {
     return projects
 }
 
-module.exports = {
-    communitySort,
-    marketSort,
-    volumeSort
+export  const hypeLevel = (hype)=>{
+    let imageHype = minHype
+    let imageClass = "minHype"
+    if(hype > 30){
+        imageHype = two
+        imageClass = "two"
+    } 
+    if(hype > 70){
+        imageHype = three
+        imageClass = "three"
+
+    } 
+    if(hype > 130){
+        imageHype = four
+        imageClass = "four"
+
+    } 
+    if(hype > 150) {
+        imageHype = five
+        imageClass = "five"
+
+    }
+    if(hype > 300){
+        imageHype = maxHype
+        imageClass = "maxHype"
+    } 
+    return {imageHype, imageClass}
 }
+
+// module.exports = {
+//     communitySort,
+//     marketSort,
+//     volumeSort,
+//     hypeLevel
+// }

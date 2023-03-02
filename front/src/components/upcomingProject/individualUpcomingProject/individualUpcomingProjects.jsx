@@ -2,12 +2,13 @@ import {BsTwitter} from "react-icons/bs"
 import { IconContext } from "react-icons";
 import oso from "../../../assets/oso.png"
 import s from "./individualUpcomingProject.module.css"
+import { hypeLevel } from "../../../helper/helper";
 
 
 export default function UpcomingProject({url,hype, name,twitterFollowers,img,i,volumeToday,supply,totalVolume,floorPrice,minted}){
-    let style = "par"
-    i % 2 === 0 ? style = "par" : style = "inpar"
-    // console.log(style)
+    const {imageHype, imageClass} = hypeLevel(hype)
+    
+
     let twitter=twitterFollowers.replace(" Followers","")
      twitter=twitter.replace(" Seguidores","")
     // console.log(twitter)
@@ -19,7 +20,7 @@ export default function UpcomingProject({url,hype, name,twitterFollowers,img,i,v
             <IconContext.Provider value={{className: s.icon,size:"1em" }}>
             <div className={s.tweetdiv} onClick={()=>window.open(url)}><BsTwitter/><span>{twitter}</span></div>
             </IconContext.Provider>
-            <div className={s.imgContainer} onMouseOver={()=>console.log(hype)}><img width={"50"} src={oso} alt="hype"/></div>
+            <div className={s.imgContainer} onMouseOver={()=>console.log(hype)}><img className={s[imageClass]} width={"50"} src={imageHype} alt="hype"/></div>
         </div>
     )
 }

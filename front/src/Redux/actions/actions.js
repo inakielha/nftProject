@@ -4,7 +4,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit'
 export const ALL_PROJECTS = createAsyncThunk(
     'ALL_PROJECTS', async () => {
         try {
-            const projects = await axios.get('http://localhost:3002/minted')
+            const projects = await axios.get('/minted')
             // console.log(projects.data)
             return projects.data
         } catch (error) {
@@ -17,7 +17,7 @@ export const ALL_PROJECTS = createAsyncThunk(
 export const UPCOMING_PROJECTS = createAsyncThunk(
     'UPCOMING_PROJECTS', async () => {
         try {
-            const projects = await axios.get('http://localhost:3002/upcoming')
+            const projects = await axios.get('/upcoming')
             // console.log(projects.data)
             return projects.data
         } catch (error) {

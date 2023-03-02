@@ -39,7 +39,7 @@ export default function Projects() {
                 class="twitter-dm-button" data-screen-name="@furni">
                 List your Project</a></div>
             </div>
-            <div className={s.grid}>
+            <div onClick={()=> navigate("/projectsMinted")} className={s.grid}>
               <div className={s.rows}>
                 <span></span>
                 <span></span>
@@ -61,7 +61,7 @@ export default function Projects() {
             <Link to={"/projectsMinted"} >See all projects</Link>
 
             <h3 className={s.titulo}>Upcoming NFTs</h3>
-            <div className={s.grid}>
+            <div className={s.grid} onClick={()=> navigate("/upcomingProjects")}>
               <div className={s.rows}>
                 <span></span>
                 <span></span>

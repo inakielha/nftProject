@@ -6,7 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { ALL_PROJECTS, UPCOMING_PROJECTS } from "../../Redux/actions/actions";
 import { Link, useNavigate } from "react-router-dom";
 import NavMushie from "../navbar/navbarTwo/navMushie";
-
+import UpcomingProject from "../upcomingProject/individualUpcomingProject/individualUpcomingProjects";
+import f from "../upcomingProject/upcomingProjects.module.css"
 
 export default function Projects() {
   const [buttonProjects, setButtonProjects] = useState(false);
@@ -61,8 +62,8 @@ export default function Projects() {
             <Link to={"/projectsMinted"} >See all projects</Link>
 
             <h3 className={s.titulo}>Upcoming NFTs</h3>
-            <div className={s.grid} onClick={()=> navigate("/upcomingProjects")}>
-              <div className={s.rows}>
+            <div className={f.grid} style={{cursor:"pointer"}} onClick={()=> navigate("/upcomingProjects")}>
+              <div className={f.rows}>
                 <span></span>
                 <span></span>
                 <span>Project</span>
@@ -71,7 +72,7 @@ export default function Projects() {
               </div>
               {
                 firstFiveUpcomingProjects?.map((project, index) => {
-                  return (<ProjectInfo url={project.url} key={project._id} name={project.name} twitterFollowers={project.twitterFollowers} img={project.img} i={index} minted={project.minted} volumeToday={project.minted ? project.volumeToday : ""} supply={project.minted ? project.supply : ""} totalVolume={project.minted ? project.totalVolume : ""} floorPrice={project.minted ? project.floorPrice : ""} hype={project.hype} />)
+                  return (<UpcomingProject url={project.url} key={project._id} name={project.name} twitterFollowers={project.twitterFollowers} img={project.img} i={index} minted={project.minted} volumeToday={project.minted ? project.volumeToday : ""} supply={project.minted ? project.supply : ""} totalVolume={project.minted ? project.totalVolume : ""} floorPrice={project.minted ? project.floorPrice : ""} hype={project.hype} />)
                 })
               }
             </div>

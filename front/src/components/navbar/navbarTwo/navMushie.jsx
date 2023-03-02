@@ -23,7 +23,7 @@ export default function NavMushie({colorFondo}){
          }else setStyle("")
         })
     },[])
-    console.log(navStyle)
+    // console.log(navStyle)
     return(
         <nav className={s[navStyle]}>
             <IconContext.Provider value={{className: s.icon,size:"2em" }}>

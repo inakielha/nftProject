@@ -9,7 +9,7 @@ import NavMushie from "../navbar/navbarTwo/navMushie"
 
 export default function ProjectsMinted() {
   const dispatch = useDispatch()
-  const [sort, setSorted] = useState("")
+  const [sort, setSorted] = useState("marketCap")
   const topProjects = useSelector(state => state.clientReducer.mintedProjects)
   let dmText = "Hi%20Mushies!%20I%20want%20to%20list%20my%20project!💫🍄"
 
@@ -67,12 +67,12 @@ export default function ProjectsMinted() {
               <div><span></span></div>
               <div><span></span></div>
               <div><span>Project</span></div>
-              <div><span onClick={() => community()}>community</span>{sort === "community" && <BsArrowDown />}</div>
-              <div><span onClick={() => handleMarket()}>Market Cap</span>{sort === "marketCap" && <BsArrowDown />}</div>
-              <div><span onClick={() => handleVolume()}>Volume 24hs</span>{sort === "volume" && <BsArrowDown />}</div>
-              <div><span onClick={() => handleSupply()}>supply</span>{sort === "supply" && <BsArrowDown />}</div>
-              <div><span onClick={() => handleFloor()}>Floor Price</span>{sort === "floor" && <BsArrowDown />}</div>
-              <div><span onClick={() => handleHype()}>hype</span>{sort === "hype" && <BsArrowDown />}</div>
+              <div><span style={{cursor:"pointer"}} className={sort === "community" && s.underline} onClick={() => community()}>community</span></div>
+              <div><span style={{cursor:"pointer"}} className={sort === "marketCap" && s.underline} onClick={() => handleMarket()}>Market Cap</span></div>
+              <div><span style={{cursor:"pointer"}} className={sort === "volume" && s.underline} onClick={() => handleVolume()}>Volume 24hs</span></div>
+              <div><span style={{cursor:"pointer"}} className={sort === "supply" && s.underline} onClick={() => handleSupply()}>supply</span></div>
+              <div><span style={{cursor:"pointer"}} className={sort === "floor" && s.underline} onClick={() => handleFloor()}>Floor Price</span></div>
+              <div><span style={{cursor:"pointer"}} className={sort === "hype" && s.underline} onClick={() => handleHype()}>hype</span></div>
             </div>
             {
               topProjects?.map((project, index) => {

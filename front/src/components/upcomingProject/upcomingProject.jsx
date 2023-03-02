@@ -12,10 +12,10 @@ import f from "../projectRank/projectRank.module.css"
 
 
 export default function UpcomingProjects() {
-    const [sort, setSorted] = useState("")
+    const [sort, setSorted] = useState("community")
     const dispatch = useDispatch()
     const upcomingProjects = useSelector(state => state.clientReducer.upcomingProjects)
-    
+
     let dmText = "Hi%20Mushies!%20I%20want%20to%20list%20my%20project!💫🍄"
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -52,8 +52,8 @@ export default function UpcomingProjects() {
                             <div><span></span></div>
                             <div><span></span></div>
                             <div><span>Project</span></div>
-                            <div><span onClick={() => handleCommunity()}>community</span>{sort === "community" && <BsArrowDown />}</div>
-                            <div><span onClick={() => handleHype()}>hype</span>{sort === "hype" && <BsArrowDown />}</div>
+                            <div><span style={{cursor:"pointer"}} className={sort === "community" && s.underline} onClick={() => handleCommunity()}>community</span></div>
+                            <div><span style={{cursor:"pointer"}} className={sort === "hype" && s.underline} onClick={() => handleHype()}>hype</span></div>
                         </div>
                         {
                             upcomingProjects?.map((project, index) => {

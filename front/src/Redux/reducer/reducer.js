@@ -38,7 +38,6 @@ export const clientReducer = createReducer(initialState, (callback) => {
         }
     })
     callback.addCase(COMMUNITY.fulfilled, (state, action)=>{
-        // state.upcomingProjects = action.payload.ok ? action.payload.projects : ""
         if (action.payload === "minted"){
         let projects = state.mintedProjects
         let sortedProjects = communitySort(projects)
@@ -50,19 +49,16 @@ export const clientReducer = createReducer(initialState, (callback) => {
         }
     })
     callback.addCase(MARKET_CAP.fulfilled, (state, action)=>{
-        // state.upcomingProjects = action.payload.ok ? action.payload.projects : ""
        let projects = state.mintedProjects
        let sortedProjects = marketSort(projects)
        state.mintedProjects = sortedProjects
     })
     callback.addCase(VOLUME_HS.fulfilled, (state, action)=>{
-        // state.upcomingProjects = action.payload.ok ? action.payload.projects : ""
        let projects = state.mintedProjects
        let sortedProjects = volumeSort(projects)
        state.mintedProjects = sortedProjects
     })
     callback.addCase(SUPPLY.fulfilled, (state, action)=>{
-        // state.upcomingProjects = action.payload.ok ? action.payload.projects : ""
        let projects = state.mintedProjects
         projects.sort((a,b)=>{
             if (a.supply === "???") return 1

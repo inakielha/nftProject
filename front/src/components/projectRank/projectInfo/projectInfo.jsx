@@ -11,7 +11,7 @@ export default function ProjectInfo({url,hype, name,twitterFollowers,img,i,volum
 
     let twitter=twitterFollowers.replace(" Followers","")
      twitter=twitter.replace(" Seguidores","")
-    console.log(imageClass)
+    // console.log(imageClass)
     return(
         <div className={s.row}>
             <div className={s.number}><div className={s.indice}>{i+1}</div></div>

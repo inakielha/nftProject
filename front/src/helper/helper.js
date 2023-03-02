@@ -98,7 +98,7 @@ export const volumeSort = (projects) => {
         let bNumber;
         let aVolume;
         let bVolume;
-        console.log(a.volumeToday,b.volumeToday,"numeros")
+        // console.log(a.volumeToday,b.volumeToday,"numeros")
         if (a?.volumeToday?.includes("k")) {
             aNumber = a?.volumeToday?.split("k", 1)
             aVolume = aNumber[0].trim().replace(",",".") * 1000
@@ -119,8 +119,9 @@ export const volumeSort = (projects) => {
 
         }
     
-        console.log(aVolume,bVolume,"------",bVolume - aVolume)
-
+        // console.log(aVolume,bVolume,"------",bVolume - aVolume)
+        if (aVolume === "-") return 1
+        if (bVolume === "-") return -1
         if (!aVolume && !bVolume) {
             return 0
         }
@@ -133,7 +134,6 @@ export const volumeSort = (projects) => {
             return bVolume - aVolume
         }
     })
-    console.log(projects)
     return projects
 }
 

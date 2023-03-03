@@ -25,7 +25,7 @@ export default function Vision({colorFondo}) {
 
                 {/* <IconContext.Provider value={{ className: "global-class-name", size: "2.5em" }}> */}
                     {/* <div><BsTwitter /></div> */}
-                    <span className={s.share}>{hover ? "share the vision" : "Infect the world"}</span>
+                    <span className={s.share}>{hover ? "share the vision" : "Poison Canto"}</span>
                 {/* </IconContext.Provider> */}
             </div>
             </div>

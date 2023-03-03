@@ -12,7 +12,7 @@ export default function Faq({ colorFondo }) {
         false
     ])
     const [test, setTest] = useState(true)
-    function handleSelect (number) {
+    function handleSelect(number) {
         // console.log(button[number])
         console.log(button)
         let arr = button
@@ -22,22 +22,26 @@ export default function Faq({ colorFondo }) {
     }
     return (
         // <section className={s.section}>
-        <section className={s[colorFondo]}>
+        <section className={s.section}>
             <div className={s.container}>
                 <span className={s.faq}>faq</span>
                 <div className={s.faqContainer}>
-                    <div className={s.pregunta} onClick={() => handleSelect(0)}><span className={s.text}>What is sui?</span>{!button[0] ? <div className={s.flecha}></div>:<div className={s.flechaBaja}></div>}</div>
-                    {button[0] && <div className={s.respuesta}><span className={s.respuestaText}>Aptos es un proyecto nuevo e independiente creado para cumplir la visión de ofrecer la cadena de bloques más segura y lista para producción del mundo. </span></div>}
-                    <div className={s.pregunta} onClick={() => handleSelect(1)}><span className={s.text}>What wallet should i use?</span>{!button[1] ? <div className={s.flecha}></div>:<div className={s.flechaBaja}></div>}</div>
-                    {button[1] && <div className={s.respuesta}> <span className={s.respuestaText}>recomendamos usar metamask o no se que mas.</span></div>}
-                    <div className={s.pregunta} onClick={() => handleSelect(2)}><span className={s.text}>What is the supply of the project?</span>{!button[2] ? <div className={s.flecha}></div>:<div className={s.flechaBaja}></div>}</div>
-                    {button[2] && <div className={s.respuesta}><span className={s.respuestaText}>no tenemos idea, capaz que 500 nft</span></div>}
-                    <div className={s.pregunta} onClick={() => handleSelect(3)}><span className={s.text}>What is the mint price?</span>{!button[3] ? <div className={s.flecha}></div>:<div className={s.flechaBaja}></div>}</div>
-                    {button[3] && <div className={s.respuesta}><span className={s.respuestaText}>mmm me mataste, entre 10 0n 30 usd</span></div>}
-                    <div className={s.pregunta} onClick={() => handleSelect(4)}><span className={s.text}>When will the mint take place?</span>{!button[4] ? <div className={s.flecha}></div>:<div className={s.flechaBaja}></div>}</div>
-                    {button[4] && <div className={s.respuesta}><span className={s.respuestaText}>cuando salga la mainnet corazon</span></div>}
-                    <div className={s.pregunta} onClick={() => handleSelect(5)}><span className={s.text}>Why soldier?</span>{!button[5] ? <div className={s.flecha}></div>:<div className={s.flechaBaja}></div>}</div>
-                    {button[5] && <div className={s.respuesta}><span className={s.respuestaText}>porque bancamo a muerte a sui en las buenas y en las malas</span></div>}
+                    <div className={s.pregunta} onClick={() => handleSelect(0)}><span className={s.text}>What is Canto?</span>{!button[0] ? <div className={s.flecha}></div> : <div className={s.flechaBaja}></div>}</div>
+                    {button[0] && <div className={s.respuesta}><span className={s.respuestaText}>Canto is a permissionless general-purpose blockchain running the Ethereum Virtual Machine (EVM). It was built to deliver on the promise of DeFi – that through a post-traditional financial movement, new systems will be made accessible, transparent, decentralized, and free.</span></div>}
+                    <div className={s.pregunta} onClick={() => handleSelect(1)}><span className={s.text}>What wallet should i use?</span>{!button[1] ? <div className={s.flecha}></div> : <div className={s.flechaBaja}></div>}</div>
+                    {button[1] && <div className={s.respuesta}> <span className={s.respuestaText}>Most common ones are Metamask and Keplr</span></div>}
+                    <div className={s.pregunta} onClick={() => handleSelect(2)}><span className={s.text}>What is the supply of the project?</span>{!button[2] ? <div className={s.flecha}></div> : <div className={s.flechaBaja}></div>}</div>
+                    {button[2] && <div className={s.respuesta}><span className={s.respuestaText}>999 unique NFTs</span></div>}
+                    <div className={s.pregunta} onClick={() => handleSelect(3)}><span className={s.text}>What is the mint price?</span>{!button[3] ? <div className={s.flecha}></div> : <div className={s.flechaBaja}></div>}</div>
+                    {button[3] && <div className={s.respuesta}><span className={s.respuestaText}>WL – 8 $CANTO
+                    </span>
+                    <span className={s.respuestaText}>Public – 10 $CANTO
+                    </span>
+                    </div>}
+                    <div className={s.pregunta} onClick={() => handleSelect(4)}><span className={s.text}>When will the mint take place?</span>{!button[4] ? <div className={s.flecha}></div> : <div className={s.flechaBaja}></div>}</div>
+                    {button[4] && <div className={s.respuesta}><span className={s.respuestaText}>February 13th</span></div>}
+                    <div className={s.pregunta} onClick={() => handleSelect(5)}><span className={s.text}>Where?</span>{!button[5] ? <div className={s.flecha}></div> : <div className={s.flechaBaja}></div>}</div>
+                    {button[5] && <div className={s.respuesta}><span className={s.respuestaText}>At Gods Canto Launchpad</span></div>}
 
                 </div>
             </div>

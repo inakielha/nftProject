@@ -177,6 +177,7 @@
 }
 .logoContainer{
     width: 10%;
+    cursor: pointer;
 }
 .logoContainer img{
     width: 100%;

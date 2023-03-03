@@ -1,49 +1,16 @@
-.beige{
-    background-color: #CEB280;
+.section{
+    background: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%);
     height: 79vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-.skyblue{
-    background-color: #68c5d1;
-    height: 79vh;
+.shadow {
     width: 100%;
+    padding-top: 25.9vh;
+    background:rgb(0, 0, 0,0.6) ;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.pink{
-    background-color: #ffafcc;
-    height: 79vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.violet{
-    background-color: #9d4edd;
-    height: 79vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.orange{
-    background-color: #fe7f2d;
-    height: 79vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.green{
-    background-color: #a7c957;
-    height: 79vh;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
 }
 .container{
@@ -53,31 +20,31 @@
     /* padding: 1em 0; */
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .imageContainer {
     /* background-color: #9d4edd; */
     width: 50%;
-    height: 100%;
+    height: auto;
     padding: 0;
     margin: 0;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .image {
     /* background-color: orange; */
-    object-fit: contain;
-    width: 65%;
-    max-height: 100%;
+    /* object-fit: contain; */
+    width: 80%;
+    /* max-height: 100%; */
     padding: 0;
     margin: 0;
-    cursor: pointer;
+    /* background-color: red; */
 }
 .coming{
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 1.5rem;
     font-weight: 900;
     color: red;
@@ -94,9 +61,9 @@
     animation-play-state: running;
     animation-name: wiggle;
 }
-/* .coming::selection{
+.coming::selection{
     color: red;
-} */
+}
 .textContainer {
     /* background-color: aliceblue; */
     width: 50%;
@@ -113,7 +80,10 @@
     /* background-color: red; */
     width: 100%;
     /* background-color: red; */
-    text-align:right;
+    font-family: "Red Hat Display";
+    font-weight: bold;
+    color: #fff;
+    text-align:center;
     text-justify:distribute;
     text-transform: uppercase;
     /* display: flex;
@@ -133,5 +103,82 @@
     }
     65% {
         transform: rotate(8deg);
+    }
+}
+
+@media (max-width: 768px){
+    /* .green{
+        background-color: #a7c957;
+        height: 79vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    } */
+    .green{
+        width: 100%;
+        height: 80vh;
+        /* background-color: red; */
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .container {
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .imageContainer {
+        /* background-color: #9d4edd; */
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .image {
+        /* background-color: orange; */
+        object-fit: contain;
+        width: 100%;
+        max-height: 100%;
+        padding: 0;
+        margin: 0;
+        /* cursor: pointer; */
+    }
+    .textContainer {
+        /* background-color: aliceblue; */
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight:900;
+        padding: 0;
+    }
+    
+    .coming{
+        position: absolute;
+        font-size: 1rem;
+        font-weight: 900;
+        top: 40%;
+        left: 80%;
+    }
+
+    .text{
+        text-align:center;
+        text-justify:distribute;
+        text-transform: uppercase;
+        /* display: flex;
+        justify-self: flex-end;
+        align-self: flex-end; */
     }
 }

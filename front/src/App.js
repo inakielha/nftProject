@@ -8,13 +8,14 @@ import Team from './components/team/team';
 import Builder from './components/builder/builder';
 import Faq from './components/faq/faq';
 import { Route, Routes, } from 'react-router-dom';
+import NavMushie from './components/navbar/navbarTwo/navMushie';
 
 
 function App() {
   const [colorFondo, setColorFondo] = useState("beige")
   return (
     <>
-      <Navbar colorFondo={colorFondo} />
+      <NavMushie colorFondo={colorFondo} />
       <Header setColorFondo={setColorFondo} colorFondo={colorFondo} />
       <Vision colorFondo={colorFondo} />
       <Team colorFondo={colorFondo} />

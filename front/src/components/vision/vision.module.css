@@ -1,5 +1,5 @@
 .section{
-    /* background-color: green; */
+    background-color: #2d293e;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,6 +27,9 @@
     font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
+    color: #fff;
+    font-family: "Red Hat Display";
+
 }
 
 .parrafContainer{
@@ -38,9 +41,29 @@
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.2em;
+    font-family: "Red Hat Display";
+    color: #fff;
 }
-.beige {
-    background-color: #CEB280;
+.parraf span {
+    color: #f2c53d;
+    font-family: "Red Hat Display";
+
+}
+.parraf2 {
+    padding-top: 1em;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    font-family: "Red Hat Display";
+    color: #fff;
+}
+.parraf2 span {
+    color: #f2c53d;
+    font-family: "Red Hat Display";
+
+}
+.beige{
+     background-color: #CEB280;
     width: 30%;
     padding: 1em 0;
     display: flex;
@@ -48,53 +71,66 @@
     justify-content: space-around;
     cursor: pointer;
 }
-.skyblue {
-    background-color: #68c5d1;
-    width: 30%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer
+.beige {
+    background: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%);
+    font-family: "Red Hat Display";
+    color: #fff;
+    padding: 1em;
+    border-radius: 5vh;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
 }
-.pink {
-    background-color: #ffafcc;
-    width: 30%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer
-}
-.violet {
-    background-color: #9d4edd;
-    width: 30%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer
-}
-.orange {
-    background-color: #fe7f2d;
-    width: 30%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer
-}
-.green {
-    background-color: #a7c957;
-    width: 30%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer
-}
+
 .share{
     text-transform: capitalize;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+@media (max-width: 768px){
+   .orange{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .beige{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .orange{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .skyblue{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .pink{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .violet{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .green{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+   }
+   .parraf{
+    font-size: 1.5rem;
+   }
+   .share{
+    text-align: justify;
+}
 }

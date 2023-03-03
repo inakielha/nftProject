@@ -9,7 +9,7 @@ import NavMushie from "../navbar/navbarTwo/navMushie"
 
 export default function ProjectsMinted() {
   const dispatch = useDispatch()
-  const [sort, setSorted] = useState("marketCap")
+  const [sort, setSorted] = useState("community")
   const topProjects = useSelector(state => state.clientReducer.mintedProjects)
   let dmText = "Hi%20Mushies!%20I%20want%20to%20list%20my%20project!💫🍄"
 

@@ -9,9 +9,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../../../assets/Logo.png"
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 export default function NavMushie({colorFondo}){
     const [style,setStyle]= useState("")
+    const [open, setOpen] = useState(false)
     const navigate = useNavigate()
     let navStyle = "transparent" + style
     useEffect(()=>{
@@ -28,15 +31,20 @@ export default function NavMushie({colorFondo}){
         <nav className={s[navStyle]}>
             <IconContext.Provider value={{className: s.icon,size:"2em" }}>
             <div className={s.container}>
-                <div className={s.logoContainer}><img src={logo}/></div>
+                <div onClick={()=>navigate("/")} className={s.logoContainer}><img src={logo}/></div>
                 <div className={s.redes}>
-                    <div className={s.iconContainer} data-tool="Twitter"><BsTwitter onClick={()=>window.open("https://twitter.com/CantoZombs")}/><div data-tool-tip="Twitter" className={s.twitter}></div></div>
-                    <div className={s.iconContainer} data-tool="Discord"><FaDiscord/><div data-tool-tip="Discord" className={s.discord}></div></div>
+                    <div className={s.iconContainer} data-tool="Twitter"><BsTwitter onClick={()=>window.open("https://twitter.com/CantoMushies")}/><div data-tool-tip="Twitter" className={s.twitter}></div></div>
+                    <div className={s.iconContainer} data-tool="Discord"><FaDiscord onClick={()=>setOpen(true)}/><div data-tool-tip="Discord" className={s.discord}></div></div>
                     <div className={s.iconContainer} data-tool="Projects Ranking"><MdMilitaryTech onClick={()=>navigate("/projects")}/><div data-tool-tip="Project Ranking" className={s.rank}></div></div>
-                    <div className={s.iconContainer} data-tool="Marketplace"><IoStorefrontSharp/><div data-tool-tip="Marketplace" className={s.marketplace}></div></div>
+                    <div className={s.iconContainer} data-tool="Marketplace"><IoStorefrontSharp onClick={()=>setOpen(true)}/><div data-tool-tip="Marketplace" className={s.marketplace}></div></div>
                 </div>
             </div>
             </IconContext.Provider>
+            <Snackbar anchorOrigin={{vertical: "buttom",horizontal:"right"}} open={open} autoHideDuration={3000} onClose={()=>setOpen(false)}>
+                <Alert onClose={()=>setOpen(false)} severity="info" sx={{ width: '100%' }}>
+                    Coming soon!
+                </Alert>
+            </Snackbar>
         </nav>
     )
 }

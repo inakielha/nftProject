@@ -1,36 +1,35 @@
 import s from "./header.module.css"
-import image from "../../assets/nft.png"
+// import image1 from "../../assets/1.png"
+// import image2 from "../../assets/2.png"
+// import image3 from "../../assets/3.png"
+// import image4 from "../../assets/4.png"
+// import image5 from "../../assets/5.png"
+// import image6 from "../../assets/6.png"
+import image from "../../assets/maxHype.png"
+// import image from "../../assets/nft.png"
 import 'animate.css';
 import { useState } from "react";
 
-export default function Header({setColorFondo, colorFondo}) {
+export default function Header({ setColorFondo, colorFondo }) {
     const [clickme, setClickme] = useState(false)
     let [index, setIndex] = useState(0)
-    let frases = ["a web3","an art","a global","a sui","an army", "a troop"]
-    let colors = ["beige","skyblue","pink","violet", "orange","green"]
-    const handleClick = ()=>{
-        setClickme(true)
-        setIndex((prevIndex)=>{
-            if(prevIndex === 5){
-                // setColorFondo("beige")
-                return 0
-            } 
-            else{ 
-                return ++prevIndex
-            }
-        })
-        index === 5 ? setColorFondo(colors[0]) : setColorFondo(colors[++index])
-    }
+    // let images = [image1, image2,image3, image4, image5, image6]
+    let images = [image]
+    // let frases = ["a web3","an art","a global","a Canto","an infected", "an epidemic"]
+    let frases = ["Canto", "web3", "global", "art", "Brains", "Epidemic"]
+    let colors = ["green", "beige", "skyblue", "pink", "violet", "orange"]
+
     return (
-        <header className={s[colorFondo]}>
-            <div className={s.container}>
-                <div className={s.imageContainer}>
-                    <span className={s.coming} onClick={()=>handleClick()}>{!clickme ? "click me" : "coming soon"}</span>
-                    <img className={s.image} src={image} alt="nft" onClick={()=>handleClick()} />
-                </div>
-                <div className={s.textContainer}>
-                    <span className={s.text}>{frases[index]}</span>
-                    <span className={s.text}>MOVEMENT</span>
+        <header className={s.section}>
+            <div className={s.shadow}>
+                <div className={s.container}>
+                    <div className={s.imageContainer}>
+                        <img className={s.image} draggable={false} src={image} alt="nft" />
+                    </div>
+                    <div className={s.textContainer}>
+                        <span className={s.text}>POISON</span>
+                        <span className={s.text}>CANTO</span>
+                    </div>
                 </div>
             </div>
         </header>

@@ -70,6 +70,9 @@
     text-align: center;
     width: 35%;
 }
+.buttonDiv a:hover{
+    opacity: 80%;
+}
 .grid{
     width: 90%;
     display: grid;

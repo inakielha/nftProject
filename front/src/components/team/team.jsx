@@ -1,10 +1,7 @@
 import s from "./team.module.css"
-import image1 from "../../assets/maxHype.png"
-// import image2 from "../../assets/1.png"
-// import image3 from "../../assets/2 copy.png"
-// import image4 from "../../assets/3 copy.png"
-// import image5 from "../../assets/5 copy.png"
-// import image6 from "../../assets/6.png"
+import image1 from "../../assets/Asset 1.png"
+import image2 from "../../assets/Asset 2.png"
+import image3 from "../../assets/Asset 3.png"
 
 export default function Team({ colorFondo }) {
     return (
@@ -27,7 +24,7 @@ export default function Team({ colorFondo }) {
                     </div>
                     <div className={s.member}>
                     <div className={s.memberInfo}>
-                            <div className={s.nftContainer}><img className={s.img} src={image1} alt="team" /></div>
+                            <div className={s.nftContainer}><img className={s.img} src={image2} alt="team" /></div>
                         <div className={s.nameContainer}>
                             <span className={s.name}>Frankie</span>
                             <span className={s.job}>Project Manager & Developer</span>
@@ -40,9 +37,9 @@ export default function Team({ colorFondo }) {
                     </div>
                     <div className={s.member}>
                     <div className={s.memberInfo}>
-                            <div className={s.nftContainer}><img className={s.img} src={image1} alt="team" /></div>
+                            <div className={s.nftContainer}><img className={s.img} src={image3} alt="team" /></div>
                         <div className={s.nameContainer}>
-                            <span className={s.name}>VIEK</span>
+                            <span className={s.name}>Sara</span>
                             <span className={s.job}>Artist & Designer</span>
                             </div>
                         </div>

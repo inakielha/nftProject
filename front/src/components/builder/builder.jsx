@@ -1,7 +1,7 @@
 import { AiTwotoneExperiment } from "react-icons/ai"
 import { IconContext } from "react-icons";
 import s from "./builder.module.css"
-import gif from "../../assets/nft.jpg"
+import gif from "../../assets/mushiegif.gif"
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import { useState } from "react";

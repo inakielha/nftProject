@@ -17,8 +17,8 @@ export default function Vision({colorFondo}) {
             <div className={s.container}>
             <div className={s.visionContainer}><span className={s.vision}>vision</span></div>
             <div className={s.parrafContainer}>
-                <div className={s.parraf}><span>Canto Mushies</span> is a collection of venom mushrooms with the most toxic community. Our goal is to poison all <span>Canto ecosystem.</span></div> 
-                <div className={s.parraf2}><span>Join</span> this movement and <span>share the vision</span></div>
+                <div className={s.parraf}><span className={s.texto}>Canto Mushies</span> is a collection of venom mushrooms with the most toxic community. Our goal is to poison all <span className={s.texto}>Canto ecosystem.</span></div> 
+                <div className={s.parraf2}><span className={s.texto}>Join</span> this movement and <span className={s.texto}>share the vision</span></div>
             </div>
            
             <div className={s[colorFondo]} onClick={()=>window.open("https://twitter.com/intent/tweet?text="+text)} onMouseOver={()=>handleHoverin()} onMouseLeave={()=>handleHoverout()}>

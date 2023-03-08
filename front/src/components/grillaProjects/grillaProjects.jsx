@@ -14,7 +14,9 @@ export default function GrillaProjects() {
     return (
         <div className={s.section}>
             <div className={s.container}>
-                <h3>top projects</h3>
+                <div className={s.header}>
+                <span>top projects</span>
+                </div>
                 <div className={s.grilla} onClick={()=>handleClick()}>
                     <div className={s.project}>
                         <div className={s.containerDiv}>
@@ -22,7 +24,7 @@ export default function GrillaProjects() {
                             <div className={s.imgContainer}><img src={project1} alt="" /></div>
                             <div className={s.textInfo}>
                                 <span>name</span>
-                                <span>community</span>
+                                <span className={s.community}>community</span>
                             </div>
                             <div className={s.imgContainer}><img src={ima} alt="" /></div>
                         </div>
@@ -33,7 +35,7 @@ export default function GrillaProjects() {
                             <div className={s.imgContainer}><img src={project2} alt="" /></div>
                             <div className={s.textInfo}>
                                 <span>name</span>
-                                <span>community</span>
+                                <span className={s.community}>community</span>
                             </div>
                             <div className={s.imgContainer}><img src={ima2} alt="" /></div>
                         </div>
@@ -44,14 +46,14 @@ export default function GrillaProjects() {
                             <div className={s.imgContainer}><img src={project3} alt="" /></div>
                             <div className={s.textInfo}>
                                 <span>name</span>
-                                <span>community</span>
+                                <span className={s.community}>community</span>
                             </div>
                             <div className={s.imgContainer}><img src={ima3} alt="" /></div>
                         </div>
                     </div>
                 </div>
                 <div className={s.btnContainer}>
-                    <button onClick={()=>handleClick()} className={s.btn}>View List</button>
+                    <span onClick={()=>handleClick()} className={s.btn}>View List</span>
                 </div>
             </div>
         </div>

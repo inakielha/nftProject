@@ -1,13 +1,14 @@
-.section{
+.section {
     background-color: #2d293e;
     width: 100%;
     display: flex;
     justify-content: center;
     /* padding-bottom: 4em; */
     padding-bottom: 4.8em;
-    padding-top: 1.4em;
+    /* padding-top: 1.4em; */
 }
-.container{
+
+.container {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,8 @@
     align-items: center;
     /* background-color: red; */
 }
-.visionContainer{
+
+.visionContainer {
     height: 18vh;
     width: 60%;
     /* background-color: blue; */
@@ -23,6 +25,7 @@
     justify-content: center;
     align-items: flex-end;
 }
+
 .vision {
     font-size: 2.5rem;
     font-weight: 900;
@@ -32,11 +35,12 @@
 
 }
 
-.parrafContainer{
+.parrafContainer {
     /* background-color: aqua; */
     padding: 2.5em 0;
     text-align: center;
 }
+
 .parraf {
     font-size: 2rem;
     font-weight: 500;
@@ -44,11 +48,13 @@
     font-family: "Red Hat Display";
     color: #fff;
 }
+
 .parraf span {
     color: #f2c53d;
     font-family: "Red Hat Display";
 
 }
+
 .parraf2 {
     padding-top: 1em;
     font-size: 2rem;
@@ -57,80 +63,98 @@
     font-family: "Red Hat Display";
     color: #fff;
 }
+
 .parraf2 span {
     color: #f2c53d;
     font-family: "Red Hat Display";
+    font-weight: bold;
 
 }
-.beige{
-     background-color: #CEB280;
-    width: 30%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    cursor: pointer;
+
+.texto {
+    font-weight: bold;
+
 }
+
 .beige {
-    background: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%);
+    /* margin-top: 1em;
+    border-style: solid;
+    border-image: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%)1;
+    font-family: "Red Hat Display";
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    width: 20%;
+    padding: 1em;
+    text-align: center; */
+
+    background: linear-gradient(#2d293e, #2d293e) padding-box,
+        linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%) border-box;
+    border-radius: 1vh;
+    border: 3px solid transparent;
+    padding: 0.5em;
+    width: 17%;
+    text-align: center;
+
+}
+
+.share {
+    /* padding: 1em; */
     font-family: "Red Hat Display";
     color: #fff;
-    padding: 1em;
-    border-radius: 5vh;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    width: 20%;
-}
-
-.share{
     text-transform: capitalize;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
-@media (max-width: 768px){
-   .orange{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .beige{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .orange{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .skyblue{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .pink{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .violet{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .green{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-   }
-   .parraf{
-    font-size: 1.5rem;
-   }
-   .share{
-    text-align: justify;
-}
+@media (max-width: 768px) {
+    .orange {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .beige {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .orange {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .skyblue {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pink {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .violet {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .green {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .parraf {
+        font-size: 1.5rem;
+    }
+
+    .share {
+        text-align: justify;
+    }
 }

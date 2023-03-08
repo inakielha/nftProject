@@ -67,17 +67,11 @@
 .member {
     display: flex;
     flex-direction: column;
-    /* background-color: #9d4edd; */
     width: 25%;
     max-width: 100%;
-    /* margin-top: 1em; */
     cursor: pointer;
-    /* padding: 10em; */
 }
-/* .member:nth-child(-n+3):hover{
-    margin-bottom: 1em;
 
-} */
 .member:hover{
     /* margin-top: 1em; */
     transform: scale(1.15);
@@ -108,7 +102,7 @@
 .expContainer{
     width: 100%;
     background-color: #bb55ff;
-    padding: 1.5em 0;
+    padding: 2em 0;
     word-wrap: break-word;
     text-align: center;
     display: flex;

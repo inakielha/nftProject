@@ -77,17 +77,6 @@
 }
 
 .beige {
-    /* margin-top: 1em;
-    border-style: solid;
-    border-image: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%)1;
-    font-family: "Red Hat Display";
-    padding: 0;
-    color: #fff;
-    text-decoration: none;
-    width: 20%;
-    padding: 1em;
-    text-align: center; */
-
     background: linear-gradient(#2d293e, #2d293e) padding-box,
         linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%) border-box;
     border-radius: 1vh;
@@ -95,7 +84,7 @@
     padding: 0.5em;
     width: 17%;
     text-align: center;
-
+    cursor: pointer;
 }
 
 .share {

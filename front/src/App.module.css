@@ -1,6 +1,9 @@
 .section {
   background: linear-gradient(140deg,#ffb8b8 0%, #a52aff 31.99%, #6715ff 66.06%, #bb55ff 100%);
 }
+.shadow{
+  background:rgb(0, 0, 0,0.6) ;
+}
 .App {
   text-align: center;
 }

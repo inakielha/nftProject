@@ -58,8 +58,7 @@ export default function Projects() {
                 })
               }
             </div>
-            {/* <button onClick={() => navigate("/projectsMinted")}>See all projects</button> */}
-            <Link to={"/projectsMinted"} >See all projects</Link>
+            <Link to={"/projectsMinted"} className={s.link}>Show More</Link>
 
             <h3 className={s.titulo}>Upcoming NFTs</h3>
             <div className={f.grid} style={{cursor:"pointer"}} onClick={()=> navigate("/upcomingProjects")}>
@@ -76,7 +75,7 @@ export default function Projects() {
                 })
               }
             </div>
-            <Link to={"/upcomingProjects"} >See all upcoming projects</Link>
+            <Link to={"/upcomingProjects"} className={s.link} >Show More</Link>
           </div>
         </div>
               </>

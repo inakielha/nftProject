@@ -8,9 +8,8 @@ import { hypeLevel } from "../../../helper/helper";
 export default function ProjectInfo({url,hype, name,twitterFollowers,img,i,volumeToday,supply,totalVolume,floorPrice,minted}){
     // console.log(style)
     const {imageHype, imageClass} = hypeLevel(hype)
-
-    let twitter=twitterFollowers.replace(" Followers","")
-     twitter=twitter.replace(" Seguidores","")
+    let twitter=twitterFollowers?.replace(" Followers","")
+     twitter=twitter?.replace(" Seguidores","")
     // console.log(imageClass)
     return(
         <div className={s.row}>

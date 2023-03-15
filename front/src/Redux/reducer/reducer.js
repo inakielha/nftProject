@@ -1,5 +1,5 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { communitySort, marketSort, volumeSort } from '../../helper/helper'
+import { communitySort, marketSort, sortFloorPrice, volumeSort } from '../../helper/helper'
 import { ALL_PROJECTS, COMMUNITY, FLOOR_PRICE, HYPE, MARKET_CAP, SUPPLY, UPCOMING_PROJECTS, VOLUME_HS } from '../actions/actions'
 
 const initialState = {
@@ -68,12 +68,16 @@ export const clientReducer = createReducer(initialState, (callback) => {
        state.mintedProjects = projects
     })
     callback.addCase(FLOOR_PRICE.fulfilled, (state, action)=>{
-       let projects = state.mintedProjects
-        projects.sort((a,b)=>{
-            if (a.floorPrice === "???") return 1
-            else if (b.floorPrice === "???") return -1
-            else return b.floorPrice.trim().replace(",",".") - a.floorPrice.trim().replace(",",".")
-        })
-       state.mintedProjects = projects
+    //    let projects = state.mintedProjects
+    //     projects.sort((a,b)=>{
+    //         if (a.floorPrice === "???" || !a.floorPrice || isNaN(a.floorPrice.trim())) return 1
+    //         else if (b.floorPrice === "???" || !b.floorPrice || isNaN(b.floorPrice.trim())) return -1
+    //         else return b.floorPrice?.trim().replace(",",".") - a.floorPrice?.trim().replace(",",".")
+    //     })
+
+        let projects = state.mintedProjects
+        let sortedProjects = sortFloorPrice(projects)
+        state.mintedProjects = sortedProjects
+
     })
 })

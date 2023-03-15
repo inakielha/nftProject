@@ -42,6 +42,9 @@ const ProjectSchema = new Schema({
     url:{
         type: String,
         require:true
+    },
+    altoUrl:{
+        type: String
     }
 }, {
     _id: false

@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { ALL_PROJECTS, COMMUNITY, FLOOR_PRICE, HYPE, MARKET_CAP, SUPPLY, UPCOMING_PROJECTS, VOLUME_HS } from "../../Redux/actions/actions"
-import Navbar from "../navbar/navbar"
 import ProjectInfo from "../projectRank/projectInfo/projectInfo"
 import s from "../projectRank/projectRank.module.css"
-import { BsArrowDown } from "react-icons/bs";
 import NavMushie from "../navbar/navbarTwo/navMushie"
 
 export default function ProjectsMinted() {
@@ -76,7 +74,7 @@ export default function ProjectsMinted() {
             </div>
             {
               topProjects?.map((project, index) => {
-                return (<ProjectInfo url={project.url} key={project._id} name={project.name} twitterFollowers={project.twitterFollowers} img={project.img} i={index} minted={project.minted} volumeToday={project.minted ? project.volumeToday : ""} supply={project.minted ? project.supply : ""} totalVolume={project.minted ? project.totalVolume : ""} floorPrice={project.minted ? project.floorPrice : ""} hype={project.hype} />)
+                return (<ProjectInfo altoUrl={project.altoUrl} url={project.url} key={project._id} name={project.name} twitterFollowers={project.twitterFollowers} img={project.img} i={index} minted={project.minted} volumeToday={project.minted ? project.volumeToday : ""} supply={project.minted ? project.supply : ""} totalVolume={project.minted ? project.totalVolume : ""} floorPrice={project.minted ? project.floorPrice : ""} hype={project.hype} />)
               })
             }
           </div>

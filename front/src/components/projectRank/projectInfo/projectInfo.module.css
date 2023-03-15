@@ -1,4 +1,4 @@
-.row{
+.row {
     display: grid;
     grid-template-columns: 6% 11% 12% 11% 12% 12% 12% 12% 11%;
     align-items: center;
@@ -13,24 +13,25 @@
     font-weight: bold;
     padding: 0.2em 0;
 }
-.row div span{
+
+.row div span {
     font-family: "Red Hat Display";
     font-weight: normal;
 }
-.row div {
-    /* background-color: orange; */
+
+/* .row div {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.number{
-display: flex;
-justify-content: center;
-align-items: center;
-font-family: "Red Hat Display";
-font-weight: bold;
-font-size: 1.7rem;
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Red Hat Display";
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 
 
@@ -45,40 +46,70 @@ font-size: 1.7rem;
 }
 
 .maxHype {
-    background:rgba(177, 71, 71, 0.6) ;
+    background: rgba(177, 71, 71, 0.6);
 }
 
-.name{
+.name {
     /* text-align: left; */
     /* width: 10%; */
     /* background-color: gray; */
     word-wrap: break-word;
 }
-.par div span{
+
+.par div span {
     font-size: 1rem;
 }
 
-.inpar div span{
+.inpar div span {
     font-size: 1rem;
 }
-.inpar div div{
+
+.inpar div div {
     font-size: 2rem;
     font-weight: 800;
     color: aliceblue;
 }
-.par div div{
+
+.par div div {
     font-size: 2rem;
     font-weight: 800;
     color: aliceblue;
 }
-.tweetdiv{
+
+.logoContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
-    cursor: pointer;
-}
-.icon{
-    color: #1DA1F2;
+    flex-direction: column;
+    gap: 0.2em;
+    /* background-color: orange; */
 }
 
+.logoContainer div {
+    width: 80%;
+}
+
+.tweetdiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+    cursor: pointer;
+    /* background-color: blue; */
+    width: 100%;
+}
+
+.altoContainer {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.altoContainer img {
+    width: 15%;
+}
+
+.icon {
+    color: #1DA1F2;
+}

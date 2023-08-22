@@ -7,7 +7,8 @@ import ProjectsMinted from './components/projectsMinted/projectsMinted';
 import UpcomingProjects from './components/upcomingProject/upcomingProject';
 import axios from "axios"
 
-axios.defaults.baseURL= process.env.REACT_APP_API
+// axios.defaults.baseURL= process.env.REACT_APP_API
+axios.defaults.baseURL= "http://localhost:2500"
 export default function Landing(){
     return(
         <>

@@ -7,8 +7,7 @@ const router = Router()
 //USERS
 router.get('/minted', async (req, res) => {
     try {
-        const allProjects = await Project.find({minted: true})
-
+        const allProjects = await Project.find()
         allProjects.sort((a, b) => {
             let aNumber;
             let bNumber;
@@ -58,8 +57,8 @@ router.get('/minted', async (req, res) => {
 
 router.get('/upcoming', async (req, res) => {
     try {
-        const allProjects = await Project.find({minted: false})
-
+        const allProjects = await Project.find({})
+        return res.json({ ok: true, projects: "aca" })
         allProjects.sort((a, b) => {
             let aNumber;
             let bNumber;

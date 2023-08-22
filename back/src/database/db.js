@@ -7,10 +7,9 @@ require ("dotenv").config();
 
 const dbConnection = async ()=>{
     try {
-        // console.log("HOOOOLAAAA",process.env.MONGO_CONNECTION,test)
-        // await mongoose.connect(process.env.MONGO_CONNECTION || 'mongodb+srv://cantoTurtle:Argentina2845@cluster0.ji8z8jd.mongodb.net/test');
-        await mongoose.connect(process.env.MONGO_URL);
-        console.log("Db connected")
+         // await mongoose.connect(process.env.MONGO_URL);
+        await mongoose.connect(process.env.MONGO_TESTNET);
+        console.log("Db connected",process.env.MONGO_TESTNET)
     }catch(e){
         console.log(e,"db fail")
     }

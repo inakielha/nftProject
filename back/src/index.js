@@ -9,7 +9,8 @@ const app = express()
 dbConnection()
 
 
-app.set("port", process.env.PORT || 2500)
+app.set("port",  2500)
+// app.set("port", process.env.PORT || 2500)
 
 app.use(cors())
 

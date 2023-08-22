@@ -7,45 +7,24 @@ const ProjectSchema = new Schema({
     },
     twitterFollowers: {
         type: String,
-        required: true
     },
     discrodFollowers: {
         type: String,
     },
     img: {
         type: String,
-        require: true
+        default: "nothing"
     },
     _id: {
         type: String,
         required: true
     },
-    minted: {
-        type: Boolean,
-        default: false
-    },
-    volumeToday: {
-        type: String
-    },
-    supply: {
-        type: String
-    },
-    totalVolume:{
-        type: String
-    },
-    floorPrice:{
-        type: String
-    },
     hype:{
-        type: String
+        type: Number
     },
     url:{
         type: String,
-        require:true
     },
-    altoUrl:{
-        type: String
-    }
 }, {
     _id: false
 })
